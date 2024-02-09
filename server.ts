@@ -31,8 +31,8 @@ app.use(session({
     saveUninitialized: true,
     resave:true
 }))
-app.use(passport.initialize())
-app.use(passport.session())
+// app.use(passport.initialize())
+// app.use(passport.session())
 app.get("/",(req:Request,res:Response)=>{
     res.send('Express + TypeScript Server');
 })
